@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="aisyah.css">
+  <title>My Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main">
+  <div class="topbar">
+    <label class="logo">My_Website</label>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+        <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="content">
+    <section id="beranda">
+      <h1>Welcome to My Website-!!^^</h1>
+      <p>Don't forget to like, comment, share and subscribe though, losers!</p>
+      <div>
+        <button type="button"><span></span><a href="https://www.instagram.com/a1syhhh?igsh=MWV2ZHU1Z3hwOGV0dw%3D%3D&utm_source=qr">Instagram</a></button>
+
+      </div>
+    </section>
+
+    <section id="profil">
+    <h2>Profil Saya</h2>
+    <h2></h2>
+    <img src="WhatsApp Image 2024-07-29 at 10.37.44.jpeg" width="145" height="210">
+    <h2></h2>
+    <p>Nim: 16323029</p>
+    <p>Nama: Aisyah Isma Yanti Jana</p>
+    <p>Jurusan: Manajemen Informatia</p>
+    </section>
+
+    <section id="audio-video">
+      <h2>Audio dan Video</h2>
+      <p>뎁트 (Dept) - Van Gogh (Feat. Ashley Alisha).</p>
+      <audio controls src="뎁트 (Dept) - Van Gogh (Feat. Ashley Alisha) [Lyric Video].mp3" alt="Audio description"></audio>
+      <p></p>
+      <p>Van Gogh</p>
+      <video controls autoplay src="Van Gogh.mp4" width="300" height="290" alt="Video description"></video>
+    </section>
+
+    <section id="tentang">
+      <h2>Tentang</h2>
+      <p>Website ini saya buat hanya untuk memenuhi kebutuhan mata kuliah
+        "Desain Web" sebagai awalan pembelajaran membuat sebuah web yang berisi
+        pengenalan diri serta belajar untuk mendesain dengan sangat simpel dan 
+        sekreatif yang Saya
+        bisa.
+        </p>
+    </section>
+
+    <section id="berita">
+        <h2>Berita Terbaru</h2>
+        <h2></h2>
+        <p>Penelitian Irises</p>
+        <p>Lukisan "Irises" karya Van Gogh yang saat ini terlihat biru
+        sebenarnya awalnya berwarna ungu. Penelitian oleh Getty Center
+        menemukan bahwa pigmen merah dalam cat tersebut telah memudar seiring
+        waktu, mengubah warna aslinya.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; Desain Web (2024) - Aisyah Isma Yanti Jana</p>
+  </footer>
+</div>
+
+<script>
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = e.target.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
